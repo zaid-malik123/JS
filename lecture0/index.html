@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main class="main w-screen min-h-screen p-10">
+      <nav class="nav w-full p-2">
+          <ul class="ul flex items-center gap-5 justify-start">
+          </ul>
+        <div class="flex items-center gap-5 justify-end">
+        <button
+          class="dark-btn w-15 h-15 bg-gray-700/40 rounded-full hover:bg-gray-700/30 transition-all duration-600"
+        >
+          <i class="ri-moon-line text-[20px] text-blue-600"></i>
+        </button>
+        <button
+          class="light-btn w-15 h-15 bg-gray-700/40 rounded-full hover:bg-gray-700/30 transition-all duration-600"
+        >
+          <i class="ri-sun-line text-[20px] text-yellow-600"></i>
+        </button>
+      </div>
+      </nav>
+     <section class="parent">
+        <div class="h-50 w-50 bg-red-200 child1">child1</div>
+        <div class="h-50 w-50 bg-yellow-200 child1">child2</div>
+        <div class="h-50 w-50 bg-pink-200 child1">child3</div>
+        <div class="h-50 w-50 bg-orange-200 child1">child4</div>
+        <div class="h-50 w-50 bg-purple-200 child1">child5</div>
+     </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

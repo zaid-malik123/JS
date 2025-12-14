@@ -76,11 +76,49 @@
       </section>
 
      
-         <section class="todo-list fullElem h-[100%] w-[100%] hidden bg-black text-white text-5xl absolute">Todo List</section>
-         <section class="daily-planner fullElem h-[100%] w-[100%] hidden bg-black text-white text-5xl absolute">daily-planner</section>
-         <section class="motivation fullElem h-[100%] w-[100%] hidden bg-black text-white text-5xl absolute">Motivation</section>
-         <section class="pomodore-timer fullElem h-[100%] w-[100%] hidden bg-black text-white text-5xl absolute">Todo List</section>
-         <section class="daily-goals fullElem h-[100%] w-[100%] hidden bg-black text-white text-5xl absolute">Todo List</section>
+         <section class="todo-list-fullPage fullElem h-[100%] w-[100%] bg-[var(--sec)] absolute p-7">
+          <h3 class="text-[70px] font-[700] text-[var(--pri)]">Your Task List</h3>
+          <button id="0" class="close px-[10px] py-[7px] bg-[var(--red)] rounded-lg absolute right-5 top-10 text-xl font-[500] text-white">Close</button> 
+          <div class="fullBox mt-10 h-[80%] w-full rounded-lg flex items-center gap-7">
+             <div class="leftBox h-full w-[35%] bg-[var(--tri2)] rounded-lg">
+               <form class="flex flex-col gap-3 p-5" >
+                  <input class="w-full px-5 py-2 bg-[var(--pri)] text-[30px] outline-none rounded-md" placeholder="Enter Task" type="text">
+                  <textarea class="w-full p-3 bg-[var(--pri)] text-[30px] outline-none rounded-md" cols="30" rows="7" placeholder="Enter Details" name="" id=""></textarea>
+                  <button class="w-full px-5 py-2 bg-[var(--tri1)] text-white font-[700] text-[30px] outline-none rounded-md">Add Task</button>
+               </form>
+             </div>
+
+             <div class="rightBox h-full w-[63%] bg-[var(--tri2)] rounded-lg p-5 overflow-auto">
+                <div class="w-full h-[70px] bg-[var(--pri)] flex items-center justify-between px-5 rounded-lg mb-2">
+                   <h2 class="text-2xl font-[700] text-[var(--sec)]">Coding karo</h2>
+                   <button class="px-5 py-3 bg-[var(--green)] text-white rounded-md text-xl font-[700]">Mark as Done</button>
+                </div>
+                <div class="w-full h-[70px] bg-[var(--pri)] flex items-center justify-between px-5 rounded-lg mb-2">
+                   <h2 class="text-2xl font-[700] text-[var(--sec)]">Coding karo</h2>
+                   <button class="px-5 py-3 bg-[var(--green)] text-white rounded-md text-xl font-[700]">Mark as Done</button>
+                </div>
+                
+               
+               
+             </div>
+          </div>
+         </section>
+         
+         <section class="daily-planner-fullPage fullElem h-[100%] w-[100%] hidden bg-[var(--sec)] text-white text-5xl absolute">daily-planner
+          <button id="1" class="close px-[10px] py-[7px] bg-[var(--red)] rounded-lg absolute right-5 top-5 text-xl font-[500]">Close</button> 
+         </section>
+
+         <section class="motivation-fullPage fullElem h-[100%] w-[100%] hidden bg-[var(--sec)] text-white text-5xl absolute">Motivation
+          <button id="2" class="close px-[10px] py-[7px] bg-[var(--red)] rounded-lg absolute right-5 top-5 text-xl font-[500]">Close</button>    
+         </section>
+
+         <section class="pomodore-timer-fullPage fullElem h-[100%] w-[100%] hidden bg-[var(--sec)] text-white text-5xl absolute">Todo List
+          <button id="3" class="close px-[10px] py-[7px] bg-[var(--red)] rounded-lg absolute right-5 top-5 text-xl font-[500]">Close</button> 
+         </section>
+
+         <section class="daily-goals-fullPage fullElem h-[100%] w-[100%] hidden bg-[var(--sec)] text-white text-5xl absolute">Todo List
+          <button id="4" class="close px-[10px] py-[7px] bg-[var(--red)] rounded-lg absolute right-5 top-5 text-xl font-[500]">Close</button> 
+         </section>
          
      
       

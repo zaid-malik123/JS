@@ -73,7 +73,46 @@ todoTextArea.value = ""
 // todoList()
 
 function dailyPlanner() {
-  
+  const planner = document.querySelector(".day-planner")
+
+  const today = new Date().toDateString()
+  const savedDate = localStorage.getItem("plannerDate")
+
+  if (savedDate !== today) {
+    localStorage.removeItem("plannerObj")
+    localStorage.setItem("plannerDate", today)
+  }
+
+  const hours = Array.from({ length: 18 }, (_, idx) => {
+    return `${6 + idx}:00 - ${7 + idx}:00`
+  })
+
+  let sum = ""
+  let plannerObj = JSON.parse(localStorage.getItem("plannerObj")) || {}
+
+  hours.forEach((time, idx) => {
+    let savedData = plannerObj[idx] || ""
+    sum += `
+      <div class="w-[49%] relative">
+        <p class="absolute left-2 top-1">${time}</p>
+        <input id="${idx}" 
+          class="w-full px-12 pt-5 py-3 bg-[var(--sec)] outline-none rounded-md text-[25px]" 
+          placeholder="..." 
+          type="text" 
+          value="${savedData}">
+      </div>
+    `
+  })
+
+  planner.innerHTML = sum
+
+  const plannerInput = document.querySelectorAll(".day-planner input")
+  plannerInput.forEach((elem) => {
+    elem.addEventListener("input", () => {
+      plannerObj[elem.id] = elem.value
+      localStorage.setItem("plannerObj", JSON.stringify(plannerObj))
+    })
+  })
 }
 
 dailyPlanner()

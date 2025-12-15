@@ -15,7 +15,7 @@ function openPage() {
     })
  })
 }
-openPage()
+// openPage()
 
 function todoList() {
 let currentTask = []    
@@ -70,5 +70,10 @@ todoTextArea.value = ""
 
 
 }
-todoList()
+// todoList()
 
+function dailyPlanner() {
+  
+}
+
+dailyPlanner()

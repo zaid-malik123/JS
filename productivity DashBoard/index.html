@@ -76,7 +76,7 @@
       </section>
 
          <!-- Todo List  -->
-         <section class="todo-list-fullPage fullElem h-[100%] w-[100%] bg-[var(--sec)] absolute p-7">
+         <section class="todo-list-fullPage fullElem h-[100%] w-[100%] hidden bg-[var(--sec)] absolute p-7">
           <h3 class="text-[70px] font-[700] text-[var(--pri)]">Your Task List</h3>
           <button id="0" class="close px-[10px] py-[7px] bg-[var(--red)] rounded-lg absolute right-5 top-10 text-xl font-[500] text-white">Close</button> 
           <div class="fullBox mt-10 h-[80%] w-full rounded-lg flex items-center gap-7">
@@ -95,8 +95,24 @@
          </section>
          
          <!-- Daily Planner -->
-         <section class="daily-planner-fullPage fullElem h-[100%] w-[100%] hidden bg-[var(--sec)] text-white text-5xl absolute">daily-planner
-          <button id="1" class="close px-[10px] py-[7px] bg-[var(--red)] rounded-lg absolute right-5 top-5 text-xl font-[500]">Close</button> 
+         <section class="daily-planner-fullPage fullElem h-[100%] w-[100%] bg-[var(--sec)] text-white absolute p-7">
+          <h2 class="text-[60px] font-[700]">Plan your Day to be more Productive</h2>
+          <button id="1" class="close px-[10px] py-[7px] bg-[var(--red)] rounded-lg absolute right-5 top-10 text-xl font-[500]">Close</button> 
+
+          <div class="day-planner w-full h-[85%] bg-[var(--tri2)] rounded-lg mt-10 p-5 flex flex-wrap justify-between items-start overflow-auto gap-3">
+
+           <div class="w-[49%] relative">
+              <p class="absolute left-2 top-1">6:00</p>
+              <input class="w-full px-12 pt-5 py-3 bg-[var(--sec)] outline-none rounded-md text-[25px]" placeholder="..." type="text">
+           </div>
+
+            <div class="w-[49%] relative">
+              <p class="absolute left-2 top-1">6:00</p>
+              <input class="w-full px-12 pt-5 py-3 bg-[var(--sec)] outline-none rounded-md text-[25px]" placeholder="..." type="text">
+           </div>
+
+          </div>
+
          </section>
           
          <!-- Motivation -->

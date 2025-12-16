@@ -115,4 +115,22 @@ function dailyPlanner() {
   })
 }
 
-dailyPlanner()
+// dailyPlanner()
+
+function motivationQutote() {
+
+    const fetchQuote = async () => {
+      const res = await fetch("https://api.quotable.io/random")
+      const data = await res.json()
+      console.log(data)
+    }
+
+  fetchQuote()
+}
+
+// motivationQutote()
+
+function Timer() {
+
+}
+Timer()

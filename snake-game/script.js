@@ -7,6 +7,9 @@ const rows = Math.floor(board.clientHeight / blockHeight)
 const cols = Math.floor(board.clientWidth / blockWidth)
 const dimensions = []
 let direction = "down"
+let inerval = null;
+let food = {x: Math.floor(Math.random() * rows), y: Math.floor(Math.random() * cols)}
+console.log(food)
 
 const snake = [
   {
@@ -42,13 +45,9 @@ for (let i = 0; i < rows; i++) {
 }
 
 function renderSnake(){
-  snake.forEach(segment => {
-    dimensions[`${segment.x}-${segment.y}`].style.backgroundColor = "white"
-  })
-}
-
-setInterval(() => {
   let head = null;
+  
+  dimensions[`${food.x}-${food.y}`].style.backgroundColor = "pink"
   
   if(direction == "right"){
     head = {x: snake[0].x, y: snake[0]. y + 1}
@@ -64,15 +63,30 @@ setInterval(() => {
   if(direction == "down"){
     head = {x: snake[0]. x + 1, y: snake[0]. y}
   }
-   snake.forEach(segment => {
+  if(head.x < 0 || head.x >= rows || head.y < 0 || head.y >= cols){
+    alert("Game Over")
+    clearInterval(inerval)
+  }
+  if(head.x == food.x && head.y == food.y){
+    dimensions[`${food.x}-${food.y}`].style.backgroundColor = ""
+    food = {x: Math.floor(Math.random() * rows), y: Math.floor(Math.random() * cols)}
+    snake.unshift(head)
+  }
+  snake.forEach(segment => {
     dimensions[`${segment.x}-${segment.y}`].style.backgroundColor = ""
-   }) 
-   snake.unshift(head)
-   snake.pop()
+  }) 
+  snake.unshift(head)
+  snake.pop()
    
 
+  snake.forEach(segment => {
+    dimensions[`${segment.x}-${segment.y}`].style.backgroundColor = "white"
+  })
+}
+
+inerval = setInterval(() => {
   renderSnake()
-}, 500)
+}, 300)
 
 addEventListener("keydown", (e) => {
   if(e.key == "ArrowUp"){

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main class="w-screen h-screen bg-black py-[30px] px-[50px] flex flex-col">
+      <section class="w-full flex items-center justify-between">
+        <div
+          class="text-white px-10 py-2 border-1 border-gray-800 rounded-md text-xl font-bold"
+        >
+          <p>High Score : <span>0</span></p>
+        </div>
+        <div
+          class="text-white px-10 py-2 border-1 border-gray-800 rounded-md text-xl font-bold"
+        >
+          <p>Score : <span>0</span></p>
+        </div>
+        <div
+          class="text-white px-10 py-2 border-1 border-gray-800 rounded-md text-xl font-bold"
+        >
+          <p>Time : <span>00 - 00</span></p>
+        </div>
+      </section>
+
+      <section
+        class="board w-full flex-1 mt-7 rounded-md border border-gray-800 grid grid-cols-[repeat(auto-fill,minmax(30px,1fr))] grid-rows-[repeat(auto-fill,minmax(30px,1fr))]"
+      >
+        >
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

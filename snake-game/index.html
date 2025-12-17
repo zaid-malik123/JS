@@ -13,24 +13,43 @@
         <div
           class="text-white px-10 py-2 border-1 border-gray-800 rounded-md text-xl font-bold"
         >
-          <p>High Score : <span>0</span></p>
+         <p>High Score : <span class="high-score">0</span></p>
         </div>
         <div
           class="text-white px-10 py-2 border-1 border-gray-800 rounded-md text-xl font-bold"
         >
-          <p>Score : <span>0</span></p>
+         <p>Score : <span class="score">0</span></p>
         </div>
         <div
           class="text-white px-10 py-2 border-1 border-gray-800 rounded-md text-xl font-bold"
         >
-          <p>Time : <span>00 - 00</span></p>
+          <p>Time : <span class="time">00 : 00</span></p>
         </div>
       </section>
 
       <section
         class="board w-full flex-1 mt-7 rounded-md border border-gray-800 grid grid-cols-[repeat(auto-fill,minmax(40px,1fr))] grid-rows-[repeat(auto-fill,minmax(40px,1fr))]"
+      ></section>
+
+      <div
+        class="st-modal start-modal h-full w-full absolute top-0 left-0 bg-black/20 backdrop-blur-xs flex flex-col items-center justify-center"
       >
-      </section>
+        <h3 class="text-white text-2xl mb-4">Welcome to Snake Game</h3>
+        <button
+          class="st-btn px-4 py-2 bg-gray-700 text-white rounded active:scale-96"
+        >
+          Start Game
+        </button>
+      </div>
+
+      <div
+        class="restart-modal h-full w-full absolute top-0 left-0 bg-black/30 backdrop-blur-sm flex flex-col items-center justify-center gap-5 p-10 hidden"
+      >
+        <h3 class="text-white text-2xl">Game Over</h3>
+        <button class="restart-btn px-4 py-2 bg-red-700 text-white rounded">
+          Restart Game
+        </button>
+      </div>
     </main>
     <script src="./script.js"></script>
   </body>

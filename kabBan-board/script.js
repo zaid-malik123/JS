@@ -15,13 +15,14 @@ bgModal.addEventListener("click", () => {
   modal.classList.remove("active")
 })
 
-let dragItem = null;
-tasks.forEach((task) => {
-  task.addEventListener("drag", (e) => {
-    dragItem = task;
-  });
-});
+let dragItem = null
 
+function enableDrag(task) {
+  task.addEventListener("dragstart", () => {
+    dragItem = task
+  })
+}
+tasks.forEach(enableDrag)
 function dragEventsCol(col) {
   col.addEventListener("dragenter", (e) => {
     e.preventDefault();
@@ -59,6 +60,29 @@ function dragEventsCol(col) {
     );
   });
 }
+
+addedBtn.addEventListener("click", () => {
+  const todoValue = document.querySelector("#todo-value").value
+  const todoDesc = document.querySelector("#todo-desc").value
+
+  if (!todoValue) return
+
+  const task = document.createElement("div")
+  task.className = "task w-full flex flex-col gap-3 bg-gray-700 rounded-md p-2"
+  task.setAttribute("draggable", "true")
+
+  task.innerHTML = `
+    <h3 class="text-white text-3xl">${todoValue}</h3>
+    <p class="text-white text-xl">${todoDesc}</p>
+    <button class="px-5 py-1 text-white bg-red-500 self-end rounded-md">Delete</button>
+  `
+
+  enableDrag(task)
+  todoColumn.appendChild(task)
+
+  modal.classList.remove("active")
+})
+
 
 dragEventsCol(todoColumn);
 dragEventsCol(progressColumn);

@@ -2,6 +2,18 @@ const todoColumn = document.querySelector("#todoCol");
 const progressColumn = document.querySelector("#progressCol");
 const doneColumn = document.querySelector("#doneCol");
 const tasks = document.querySelectorAll(".task");
+const toggleBtn = document.querySelector("#toggle-btn")
+const addedBtn = document.querySelector("#Added-btn")
+const modal = document.querySelector(".modal")
+const bgModal = document.querySelector(".bg")
+
+toggleBtn.addEventListener("click", () => {
+  modal.classList.toggle("active")
+})
+
+bgModal.addEventListener("click", () => {
+  modal.classList.remove("active")
+})
 
 let dragItem = null;
 tasks.forEach((task) => {

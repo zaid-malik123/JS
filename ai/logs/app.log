@@ -1,0 +1,8 @@
+{"level":"info","message":"Server start ho raha hai..."}
+{"level":"error","message":"Ye ek test error hai"}
+[32minfo[39m: Server start ho raha hai...
+[31merror[39m: Ye ek test error hai
+2026-03-17 21:31:13 [INFO]: Server start ho raha hai...
+2026-03-17 21:31:13 [ERROR]: Ye ek test error hai
+undefined
+undefined

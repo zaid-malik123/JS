@@ -173,5 +173,15 @@
 // // });
 
 // closure and scope , HOF
-const arr = new Array()
-console.log(arr)
+// const arr = new Array()
+// console.log(arr)
+
+//  const asyncHandler = (requestHandler) => {
+//     return (req, res, next) => {
+//         Promise.resolve(requestHandler(req, res, next))
+//         .catch((err) => next(err))
+//     }
+// }
+
+// const h = asyncHandler()
+// console.log(h)

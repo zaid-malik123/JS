@@ -1,3 +1,5 @@
+// interfce ka matlab hai agar tumhe apne data ke shape pta hai kaise aane wala hai to uska tum interfase create karlo
+
 // interface Chai {
 //     name: string,
 //     price: number

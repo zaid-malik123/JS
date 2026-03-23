@@ -1,6 +1,7 @@
 "use strict";
-// function kuchBhi<T> (value: T):T {
+// “Generic = pehle box banao, baad me decide karo usme kya rakhna hai”
 Object.defineProperty(exports, "__esModule", { value: true });
+// function kuchBhi<T> (value: T):T {
 //     return value;
 // }
 // const name = kuchBhi("zaid")
@@ -20,4 +21,21 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // const b: Box<string> = {
 //     content: "hii"
 // }
+// interface apiResponse<T> {
+//     message: string,
+//     data: T
+// }
+// const apiData:apiResponse<string[]> = {
+//     message: "success",
+//     data: [
+//         "name": "zaidmalik",
+//     ]
+// }
+// function identity <T> (value: T): T {
+//     return value
+// }
+// const name = identity("zaid")
+// const no = identity(12)
+// console.log(name)
+// console.log(no)
 //# sourceMappingURL=genrics.js.map

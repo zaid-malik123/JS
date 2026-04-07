@@ -89,4 +89,38 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // }
 // const data = wrapInArray(1)
 // console.log(data)
+// type User = {
+//     userDetails: {
+//         name: string;
+//         age: number;
+//         address: {
+//             location: string;
+//         }
+//     }
+// }
+// function createUser(user: User): User {
+//     return user
+// }
+// const user = createUser({
+//     userDetails: {
+//         name: "zaid",
+//         age: 20,
+//         address: {
+//             location: "sre"
+//         }
+//     }
+// })
+// console.log(user)
+// const User: User = {
+//    userDetails: {
+//         name: "zaid",
+//         age: 20,
+//         address: {
+//             location: "sre"
+//         }
+//     }
+// }
+// async function getName(val: string): Promise<string> {
+//     return val;
+// }
 //# sourceMappingURL=object.js.map

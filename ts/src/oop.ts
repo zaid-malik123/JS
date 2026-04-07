@@ -101,3 +101,31 @@
 // const c1 = new Child("zzz", 12, "child")
 // console.log(c1)
 
+
+// Getter :- private value ko read karne ke liye
+// Setter :- private value ko update or change karne ke liye
+
+// class User {
+//     private balance: number;
+//     public user: string;
+
+//     constructor(user: string, balance: number) {
+//         this.user = user;
+//         this.balance = balance
+//     }
+
+//     get checkBalance() {
+//         return this.balance;
+//     }
+//     set addBalance(num: number) {
+//         this.balance += num;
+//     }
+// }
+
+// const u1 = new User("zaid", 120);
+
+// console.log(u1.checkBalance)
+// console.log(u1)
+
+// u1.addBalance = 30;
+// console.log(u1.checkBalance)

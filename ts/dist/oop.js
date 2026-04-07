@@ -93,4 +93,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // console.log(u1)
 // u1.addBalance = 30;
 // console.log(u1.checkBalance)
+//  Static :- static vo value hote hai jo class ke name se access hote hai
+// class Company {
+//     static company_name = "zaid_private_limited";
+//     emp_name: string;
+//     emp_salary: number;
+//     constructor(name: string, salary: number) {
+//         this.emp_name = name;
+//         this.emp_salary = salary
+//     }
+// }
+// console.log(Company.company_name)
+// const emp1 = new Company("emp1", 12000)
+// console.log(emp1)
 //# sourceMappingURL=oop.js.map

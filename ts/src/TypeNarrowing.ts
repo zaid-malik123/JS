@@ -296,3 +296,40 @@
 // }
 
 // handlePayment({status: "completed", amount: 12})
+
+// import { v2 as cloudinary } from 'cloudinary'
+
+// cloudinary.config({ 
+//   cloud_name: 'dwnuxba8i', 
+//   api_key: '376954183134478', 
+//   api_secret: '8hy5tUK07nrTgYTmPOFuInef3HY'
+// });
+
+
+
+// const uploadOnCloudinary = async ():Promise<string> => {
+    
+
+// }
+
+// getter or setter
+
+// class User {
+//     #name: string
+//     email: string
+//     constructor(name: string, email: string) {
+//         this.#name = name,
+//         this.email = email
+//     }
+//     get getName() {
+//         return this.#name
+//     }
+//     set setName(val: string) {
+//         this.#name = val;
+//     }
+// }
+
+// const user1 = new User("zaid", "zaid@gmail.com")
+
+// user1.setName = "mohdzaidmalik"
+// console.log(user1.getName)

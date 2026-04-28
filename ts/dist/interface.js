@@ -1,6 +1,5 @@
-"use strict";
 // interfce ka matlab hai agar tumhe apne data ke shape pta hai kaise aane wala hai to uska tum interfase create karlo
-Object.defineProperty(exports, "__esModule", { value: true });
+export {};
 // interface Chai {
 //     name: string,
 //     price: number

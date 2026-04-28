@@ -1,6 +1,5 @@
-"use strict";
 // “Generic = pehle box banao, baad me decide karo usme kya rakhna hai”
-Object.defineProperty(exports, "__esModule", { value: true });
+export {};
 // function kuchBhi<T> (value: T):T {
 //     return value;
 // }

@@ -1,7 +1,6 @@
-"use strict";
 // Type Assertion;
 // matlab iska  ham typescript ko vishwas dela rhe hai ki jo ham bol rhe hai iska type ye hi aayega;
-Object.defineProperty(exports, "__esModule", { value: true });
+export {};
 // Ex:-
 // let name : string;
 // name = "zaidmalik" as string;

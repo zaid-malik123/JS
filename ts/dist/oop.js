@@ -1,8 +1,7 @@
-"use strict";
 // class Car {
 //     brand: string;
 //     speed: number;
-Object.defineProperty(exports, "__esModule", { value: true });
+export {};
 //     constructor(brand: string, speed: number) {
 //         this.brand = brand
 //         this.speed = speed

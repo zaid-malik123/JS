@@ -1,9 +1,8 @@
-"use strict";
 // interface ApiRes {
 //   success: boolean;
 //   message: string;
 // }
-Object.defineProperty(exports, "__esModule", { value: true });
+export {};
 // function apiResponse( data : ApiRes): ApiRes {
 //   if (data.success) {
 //     return {

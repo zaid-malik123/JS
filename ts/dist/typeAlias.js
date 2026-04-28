@@ -1,10 +1,9 @@
-"use strict";
 // type Pet = {
 //     name: string,
 //     age: number,
 //     type: "dog" | "cat"
 // }
-Object.defineProperty(exports, "__esModule", { value: true });
+export {};
 // // const pet: Pet = {
 // //     name: "tommy",
 // //     age: 12,

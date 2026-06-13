@@ -1,0 +1,46 @@
+services:
+  nginx:
+    image: nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - "./nginx/nginx.conf:/etc/nginx/nginx.conf"
+
+  gateway1:
+    build: ./gateway
+    env_file:
+      - ./gateway/.env
+    environment:
+      GATEWAY_NAME: "FIRST_GATEWAY_1"
+    ports:
+      - "2000:9000"
+
+  gateway2:
+    build: ./gateway
+    env_file:
+      - ./gateway/.env
+    environment:
+      GATEWAY_NAME: "FIRST_GATEWAY_2"
+    ports:
+      - "2001:9000"
+
+  auth-service:
+    build: ./services/auth
+    env_file:
+      - ./services/auth/.env
+    ports:
+      - "7001:7001"
+
+  order-service:
+    build: ./services/order
+    env_file:
+      - ./services/order/.env
+    ports:
+      - "7002:7002"
+
+  product-service:
+    build: ./services/product
+    env_file:
+      - ./services/product/.env
+    ports:
+      - "7003:7003"

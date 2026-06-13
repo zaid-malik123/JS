@@ -1,0 +1,37 @@
+services:
+  nginx:
+    image: nginx
+    ports:
+      - "8000:80"
+    volumes:
+      - "./nginx.conf:/etc/nginx/nginx.conf"
+
+  server1:
+    build:
+      context: .
+    env_file:
+      - .env
+    environment:
+      - SERVERNAME=1ST SERVER
+    ports:
+      - "3000:3000"
+  
+  server2:
+    build:
+      context: .
+    env_file:
+      - .env
+    environment:
+      - SERVERNAME=2ND SERVER
+    ports:
+      - "3001:3000"
+  
+  server3:
+    build:
+      context: .
+    env_file:
+      - .env
+    environment:
+      - SERVERNAME=3RD SERVER
+    ports:
+      - "3003:3000"
